@@ -1,0 +1,14 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  border: solid 2px orange;
+  border-radius: 15px;
+  background-color: cyan;
+
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
