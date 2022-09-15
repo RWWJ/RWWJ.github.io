@@ -1,6 +1,6 @@
 #          First Time
 
-## *ay Wallace
+## Ray Wallace
 
 ###   Sep 2022
 
