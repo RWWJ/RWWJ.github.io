@@ -1,8 +1,8 @@
 #          First Time
 
-## Ray Wallace
+## *ay Wallace
 
 ###   Sep 2022
 
 
-First attempt at using git and github for some html, css, js code
+First attempt at using **git** and **github** for some html, css, js code
