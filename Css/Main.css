@@ -1,14 +1,141 @@
-*, *::after, *::before {
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  border: 0px;
 }
 
-h1 {
-  border: solid 2px orange;
-  border-radius: 15px;
-  background-color: cyan;
 
-  padding-left: 10px;
-  padding-bottom: 5px;
+
+html {
+  font-size: 16px;  /* rem is always based on the <html> font size. Browsers generaly use 16 */
 }
+
+
+body {
+  /* border: solid 2px red; */
+  background-color: blanchedalmond;
+
+  height: 100vh;
+}
+
+
+.AllContent {
+  /* border: solid 2px orange; */
+
+  position: relative;
+
+  height: 100%;
+
+  display: grid;
+  grid-template-areas:
+              "Header"
+              "Menu"
+              "Content"
+              "Footer";
+  /* Let horizontal re-size while maxing out at 1024px */
+  grid-template-columns: minmax(0px, 1024px);
+  /* NOTE: The last row is to keep content from being behind Footer */
+  grid-template-rows: 80px 40px minmax(0px, max-content) 40px;
+
+  justify-content: center; /* center our layout horizontally, IF it does not fill the screen width */
+  /* align-content: center; /* stretch is the default */
+}
+
+
+header {
+  border: solid 2px green;
+
+  grid-row: Header;
+
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center; /* Center elements horizontally */
+  /* text-indent: 20px;  /* If NOT centered */
+  text-transform: uppercase;
+
+  background-color: Peru; /* Khaki; */
+}
+header h1 {
+  color: Khaki;
+  text-shadow: 2px 3px 5px Sienna;
+}
+
+
+.MenuArea {
+  border: solid 2px purple;
+
+  grid-row: Menu;
+  align-self: center; /* Verticaly in grid space */
+  /*justify-self: center; /* Horicontaly in grid space */
+}
+
+
+.ContentArea {
+  border: solid 2px blue;
+
+  font: 18px "Informal Roman", times, serif;
+
+  grid-row: Content;
+}
+
+
+footer {
+  /* border: solid 2px purple; */
+
+  font-size: 0.75rem;
+
+  background-color: beige;
+
+  display: grid;
+  grid-template-columns: max-content min-content;
+  width: 100%;  /* So Justify works */
+  justify-content: space-between;
+  padding: 5px 10px;
+
+  position: fixed;
+  bottom: 0px;
+  grid-row: Footer; /* Going to end up there by default anyway */
+}
+
+
+Button {
+  text-decoration: none;
+  border: solid 1px rgba(8, 59, 42, 0.96);
+  box-shadow: 2px 2px 2px black;
+
+  margin: 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+Button:hover {
+  opacity: .5;
+}
+
+
+#StatusID {
+  display: block; /* So margin auto works for centering */
+  margin: 0px auto;
+}
+
+
+.HideContent {
+  display: none;
+}
+
+
+hr {
+  border: solid 1px gray;
+  margin: 5px;
+  border-top: 3px double #333;
+}
+
+canvas {
+  border: solid 2px brown;
+
+}
+
+
+
+
+/*  */
