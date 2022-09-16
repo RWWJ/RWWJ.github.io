@@ -1,7 +1,6 @@
 #          First Time
 
-## Ray Wallace
- ![](Smiley-32x32.png)
+## Ray Wallace ![](Smiley-32x32.png)
 
      Sep 2022
 
