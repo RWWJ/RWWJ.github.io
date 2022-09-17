@@ -36,7 +36,7 @@ body {
   /* Let horizontal re-size while maxing out at 1024px */
   grid-template-columns: minmax(0px, 1024px);
   /* NOTE: The last row is to keep content from being behind Footer */
-  grid-template-rows: 80px 40px minmax(0px, max-content) 40px;
+  grid-template-rows: max-content 40px minmax(0px, max-content) 40px;
 
   justify-content: center; /* center our layout horizontally, IF it does not fill the screen width */
   /* align-content: center; /* stretch is the default */
@@ -44,26 +44,25 @@ body {
 
 
 header {
-  border: solid 2px green;
+  /* border: solid 2px green; */
+  background-color: Peru; /* Khaki; */
 
   grid-row: Header;
-
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center; /* Center elements horizontally */
-  /* text-indent: 20px;  /* If NOT centered */
-  text-transform: uppercase;
-
-  background-color: Peru; /* Khaki; */
 }
 header h1 {
   color: Khaki;
-  text-shadow: 2px 3px 5px Sienna;
+
+  text-shadow: 2px 2px 7px black;
+  text-transform: uppercase;
+
+  text-align: center; /* Center elements horizontally */
+
+  font-size: 50px;
 }
 
 
 .MenuArea {
-  border: solid 2px purple;
+  /* border: solid 2px purple; */
 
   grid-row: Menu;
   align-self: center; /* Verticaly in grid space */
@@ -72,7 +71,7 @@ header h1 {
 
 
 .ContentArea {
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
 
   font: 18px "Informal Roman", times, serif;
 
